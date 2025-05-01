@@ -10,14 +10,8 @@ class DemoQa(BasePage):
 
         self.icon = WebElement(driver, '#app > header > a')
         self.btn_elements = WebElement(driver, "#app > div > div > div.home-body > div > div:nth-child(1)")
-
-    def exist_icon(self):
-        try:
-            self.icon.find_element()
-        except NoSuchElementException:
-            return False
-        return True
-
+        self.footer = WebElement(driver, "#app > footer > span")
+        self.body_elements_txt = WebElement(driver, "#app > div > div > div > div.col-12.mt-4.col-md-6")
 
 
 

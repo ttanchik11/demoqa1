@@ -18,4 +18,7 @@ class BasePage:
         else:
             return False
 
+    def get_footer_text(self):
+        return self.footer.get_text()
+
 
